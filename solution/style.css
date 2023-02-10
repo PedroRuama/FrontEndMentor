@@ -2,7 +2,60 @@
 body{
     background-color: hsl(0, 0%, 98%);
     font-family: 'Epilogue';
+    display: flex;
+    
 }
+
 p{
     font-size: 18px;  
+}
+
+button{
+    border: none;
+    background: none;
+    
+}
+
+
+/* barra de navegação*/
+
+nav{
+    display: inline-flex;
+    width: 100%;
+    
+    justify-content: space-between;
+}
+nav button{
+    color: hsl(0, 0%, 41%);
+    
+}
+nav button:hover{
+    color:  hsl(0, 0%, 8%);
+}
+
+
+
+#nav-left{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+#sections{
+    display: inline-flex;
+    width: 100%;
+
+    justify-content: space-around;
+}
+
+
+#btn_register{
+    border: solid;
+    
+}
+
+#nav-rigth{
+    display: inline-flex;
+    align-items: center;
 }
