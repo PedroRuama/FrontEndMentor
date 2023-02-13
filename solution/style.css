@@ -22,11 +22,13 @@ button{
 nav{
     display: inline-flex;
     width: 100%;
-    
+    margin: 1%;
     justify-content: space-between;
+    position: fixed;
 }
 nav button{
     color: hsl(0, 0%, 41%);
+    font-weight: bold
     
 }
 nav button:hover{
@@ -38,24 +40,33 @@ nav button:hover{
 #nav-left{ 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 30%;
+    width: 70%;
+    
+    
 }
 
 #sections{
     display: inline-flex;
-    width: 100%;
-
-    justify-content: space-around;
+    width: 40%;
+    padding: 0% 5%;
+    justify-content: space-between;
+    
+   
 }
 
 
 #btn_register{
-    border: solid;
+    border: solid 2px;
+    padding: 15% 22%;
+    border-radius: 12px;
+    
     
 }
 
 #nav-rigth{
     display: inline-flex;
     align-items: center;
+    width: 10%;
+    justify-content: space-between;
+    padding-right: 5%;
 }
