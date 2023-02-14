@@ -3,7 +3,7 @@ body{
     background-color: hsl(0, 0%, 98%);
     font-family: 'Epilogue';
     display: flex;
-    
+    font-size: 18px;  
 }
 
 p{
@@ -16,23 +16,32 @@ button{
     
 }
 
+a{
+    text-decoration: none ;
+    color: hsl(0, 0%, 41%);
+    
 
-/* barra de navegação*/
+}
+/* barra de navegação --------------------------------------*/
 
 nav{
-    display: inline-flex;
+    display: flex;
     width: 100%;
     margin: 1%;
+    height: fit-content;
     justify-content: space-between;
     position: fixed;
+    font-size: 18px;  
 }
 nav button{
     color: hsl(0, 0%, 41%);
-    font-weight: bold
+    font-weight: bold;
+    
     
 }
 nav button:hover{
-    color:  hsl(0, 0%, 8%);
+    color:  hsl(0, 18%, 4%);
+    
 }
 
 
@@ -69,4 +78,23 @@ nav button:hover{
     width: 10%;
     justify-content: space-between;
     padding-right: 5%;
+}
+
+/* drops ----------------------------- barra de navegação*/
+
+#drop_features{
+    font-size: 14px;
+    background-color: bisque;
+    margin-top: 10%;
+    height: 150%;
+    
+    z-index: 99;
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icon{
+    display: block;
 }
