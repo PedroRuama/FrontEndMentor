@@ -88,6 +88,60 @@ public class Main{
 
 
 
+
+
+
+
+
+
+
+
+
+
+package javaapplication1;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+/**
+ *
+ * @author aluno
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Digite os numeros para colocar em ordem: ");
+        int[] numeros = new int[5];
+        for (int pos = 0; pos < 5; pos++) {
+            numeros[pos] = entrada.nextInt();
+        }
+   //     System.out.print(numeros[i] + " | ");
+        for (int i = 0; i < 5; i++) {
+            
+            for (int j = i + 1; j < 5; j++) {
+                if (numeros[i] > numeros[j]) {
+                    int aux;
+                    aux = numeros[i];
+                    numeros[i] = numeros[j];
+                    numeros[j] = aux;
+
+                }
+                
+            }
+            
+            
+        }
+        System.out.print(Arrays.toString(numeros));
+    }
+
+}
+
+
+
 -->
 
 
