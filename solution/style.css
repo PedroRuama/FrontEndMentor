@@ -52,13 +52,13 @@ nav button:hover {
   display: inline-flex;
   width: 30%;
   padding: 0% 5%;
-
+  white-space: nowrap;
   justify-content: space-between;
 }
 
 #btn_register {
   border: solid 2px;
-  padding: 15% 22%;
+  padding: 12px 20px;
   border-radius: 12px;
 }
 
@@ -75,27 +75,53 @@ nav button:hover {
 #features {
   position: relative;
 }
+#company{
+  position: relative;
+}
 
 #drop_features {
   font-size: 14px;
-  z-index: 99;
+  /* z-index: 99; */
   position: absolute;
   top: calc(100% + 20px);
   right: 0;
-  background-color: beige;
-  display: flex;
+  background-color: white;
   flex-direction: column;
   justify-content: center;
-  padding: 10px 25px;
+  padding: 10px 30px;
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
+
+#drop_company{
+  font-size: 14px;
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 10px 25px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  
+}
+
+
 
 .icon-txt {
   display: flex;
   padding: 10px 0;
   white-space: nowrap;
 }
+.icon-txt:hover{
+  color: black;
+}
 
 .icon-txt img {
   width: 16px;
   margin-right: 10px;
 }
+/* ---------------------------------------------fim barra navegação ----------------- */

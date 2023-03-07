@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snap</title>
     <link rel="stylesheet" href="style.css" />
-    <script type="script" src="script.js"></script>
+    <script src="script.js"></script>
+    <!-- <link rel="icon" href="../snap chellenge/images/logo.svg"> -->
   </head>
 
   <body>
@@ -15,10 +16,10 @@
         <img src="../snap chellenge/images/logo.svg" alt="logo" />
         <div id="sections">
           <div>
-            <button id="features">
+            <button id="features" onclick="dropFeatures()">
               Features
 
-              <div id="drop_features">
+              <div id="drop_features" >
                 <a class="icon-txt" href="#"
                   ><img
                     src="../snap chellenge/images/icon-todo.svg"
@@ -55,8 +56,24 @@
             </button>
           </div>
           <div>
-            <button>Company</button>
-            <img src="../snap chellenge/images/icon-arrow-down.svg" alt="" />
+            <button id="company" onclick="dropCompany()">
+              Company
+
+              <div id="drop_company">
+                <a href="#" class="icon-txt">
+                  History
+                </a>
+                <a href="#" class="icon-txt">
+                  Our Team
+                </a>
+                <a href="#" class="icon-txt">
+                  Blog
+                </a>
+              </div>
+
+
+              <img src="../snap chellenge/images/icon-arrow-down.svg" alt="" />
+            </button>
           </div>
           <div><button>Careers</button></div>
           <div><button>About</button></div>
@@ -67,5 +84,6 @@
         <div><button id="btn_register" type="button">Register</button></div>
       </div>
     </nav>
+    
   </body>
 </html>
