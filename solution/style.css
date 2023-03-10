@@ -4,11 +4,13 @@ body {
   background-color: hsl(0, 0%, 98%);
   font-family: "Epilogue";
   display: flex;
-  font-size: 18px;
+  /* font-size: 18px; */
+  flex-direction: column;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
+  width: 80%;
 }
 
 button {
@@ -29,7 +31,7 @@ nav {
   margin: 1%;
 
   justify-content: space-between;
-  position: fixed;
+  position: relative;
   font-size: 18px;
 }
 
@@ -81,7 +83,7 @@ nav button:hover {
 
 #drop_features {
   font-size: 14px;
-  /* z-index: 99; */
+  z-index: 99;
   position: absolute;
   top: calc(100% + 20px);
   right: 0;
@@ -96,9 +98,10 @@ nav button:hover {
 
 #drop_company{
   font-size: 14px;
+  z-index: 99;
   position: absolute;
   top: calc(100% + 20px);
-  left: 0;
+  left: calc(0 + 10px)  ;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -125,3 +128,43 @@ nav button:hover {
   margin-right: 10px;
 }
 /* ---------------------------------------------fim barra navegação ----------------- */
+
+
+
+/* --------------------------------- corpo -------------------------------------------------- */
+
+#center{
+  display: flex;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+#div_conteudo{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  position: relative;
+  font-size: 1px;
+}
+
+#title{
+  font-size:60px;
+  padding: 50px 0px 0px 0px;
+  
+}
+
+#div_img{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#img_desktop{
+  width: 65%;
+}
