@@ -167,6 +167,11 @@ nav button:hover {
   display: flex;
   align-items: center;
 }
+#div_img_mobile{
+  width: 50%;
+  display: none;
+  align-items: center;
+}
 
 #img_desktop{
   width: 100%;
@@ -197,9 +202,29 @@ nav button:hover {
 #clients{
   
   display: flex;
-  width: 65%;
+  width: 70%;
   justify-content: space-between;
   align-items: flex-end;
   position: absolute;
   bottom: 0;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+  #conteiner{
+    flex-direction: column;
+    
+  }
+  #title{
+    font-size:50px;
+    padding: 0px 0px 0px 0px;
+    
+  }
+
+  
+#div_conteudo{
+  width: 100%;
+}
 }
