@@ -11,9 +11,10 @@ body {
 
 p {
   font-size: 16px;
-  width: 65%;
+  width: 60%;
   color: hsl(0, 0%, 41%);
   line-height: 25px;
+  padding-bottom: 30px;
 }
 
 button {
@@ -73,6 +74,26 @@ nav button:hover {
   width: 10%;
   justify-content: space-between;
   padding-right: 5%;
+}
+
+/* ------mobile------- */
+
+#nav_mobile{
+  width: 250px;
+  background-color: brown;
+  display: none;
+  z-index: 99;
+  
+  
+
+}
+
+#sections_mobile{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: blueviolet;
+  margin-top: 30px;
 }
 
 /* drops ----------------------------- barra de navegação*/
@@ -158,12 +179,13 @@ nav button:hover {
 
 #title{
   font-size:80px;
-  padding: 10px 0px 0px 0px;
+  padding-top: 15px;  
+  margin-bottom: 30px;
   
 }
 
 #div_img{
-  width: 27%;
+  width: 500px;
   display: flex;
   align-items: center;
 }
@@ -212,7 +234,43 @@ nav button:hover {
 
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
+
+  /* ------------------------------barra navegação-------------------------- */
+  #nav-rigth {
+    display: none;
+    
+  }
+  
+  
+  
+  #nav_mobile{
+    display: flex;
+    
+    
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+
+ /* ------------------------------barra navegação-------------------------- */
+
+
+
+
+
+
+
+
+  /* ----------------------------------conteudo----------------------------------- */
   #conteiner{
     flex-direction: column;
     
@@ -223,8 +281,21 @@ nav button:hover {
     
   }
 
+  #div_conteudo{
+    width: 100%;
+  }
+  #div_img{
+    
+    display: none;
+   
+  }
+  #div_img_mobile{
+    
+    display: flex;
   
-#div_conteudo{
-  width: 100%;
-}
+  }
+  #br_titulo{
+    display: none;
+  }
+  
 }
