@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snap</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" /> 
     <script src="script.js"></script>
     <!-- <link rel="icon" href="../snap chellenge/images/logo.svg"> -->
   </head>
 
   <body>
+    
     <nav>
       <div id="nav-left">
+        
         <img src="../snap chellenge/images/logo.svg" alt="logo" />
         <div id="sections">
           <div>
@@ -83,18 +85,79 @@
         <div><button>Login</button></div>
         <div><button id="btn_register" type="button">Register</button></div>
       </div>
-      <div id="nav_mobile">
-        opa
-  
-  
-  
-        <div id="sections_mobile"></div>
-  
-  
-  
-      </div>
-    </nav>
+      <div id="nav_mobile">  
+        <div id="sections_mobile">
+          <div>
+            <button id="features" onclick="dropFeatures()">
+              Features
+              <img src="../snap chellenge/images/icon-arrow-down.svg" alt="" />
 
+              <div id="drop_featuresM" >
+                <a class="icon-txt" href="#"
+                  ><img
+                    src="../snap chellenge/images/icon-todo.svg"
+                    alt="icon-todo"
+                  />
+                  Todo List
+                </a>
+
+                <a class="icon-txt" href="#">
+                  <img
+                    src="../snap chellenge/images/icon-calendar.svg"
+                    alt="icon-calendar"
+                  />
+                  Calendar
+                </a>
+
+                <a class="icon-txt" href="#"
+                  ><img
+                    src="../snap chellenge/images/icon-reminders.svg"
+                    alt="icon-reminders"
+                  />
+                  Reminders
+                </a>
+
+                <a class="icon-txt" href="#"
+                  ><img
+                    src="../snap chellenge/images/icon-planning.svg"
+                    alt="icon-planning"
+                  />
+                  Planning
+                </a>
+              </div>
+             
+            </button>
+          </div>
+          <div>
+            <button id="company" onclick="dropCompany()">
+              Company
+
+              <div id="drop_company">
+                <a href="#" class="icon-txt">
+                  History
+                </a>
+                <a href="#" class="icon-txt">
+                  Our Team
+                </a>
+                <a href="#" class="icon-txt">
+                  Blog
+                </a>
+              </div>
+
+
+              <img src="../snap chellenge/images/icon-arrow-down.svg" alt="" />
+            </button>
+          </div>
+          <div><button>Careers</button></div>
+          <div><button>About</button></div>
+
+
+        </div>
+
+      </div>
+      
+    </nav>
+    <div id="fundoSombra"></div>
 
 
 
